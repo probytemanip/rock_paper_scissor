@@ -47,9 +47,8 @@ const playGame = () => {
       humanScore += 1;
     } else if (result === -1) {
       computerScore += 1;
-    } else {
     }
-    // console.log(`human:${humanScore} computer:${computerScore}`);
+
     console.log(
       result === 1
         ? `${humanChoice} beats ${computerChoice} human wins`
@@ -58,6 +57,7 @@ const playGame = () => {
         : `both chose ${computerChoice} It's a draw`
     );
   }
+
   console.log(
     humanScore > computerScore
       ? "human wins the game"
